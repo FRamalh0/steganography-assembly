@@ -8,7 +8,7 @@ Hide/Recover a message within an image, made with Assembly.
 
 Bitmap files (BMP) are image files where the exact value of each pixel is represented explicitly. The structure of this file is divided in two parts: header (blue) and pixel section (orange). 
 
-<p align="center"><img src="https://i.imgur.com/EFrdH4Q.png" width="400" height="400" alt="BMP file structure"></p>
+<p align="center"><img src="https://i.imgur.com/EFrdH4Q.png" height="300" alt="BMP file structure"></p>
 
 This script is using the ARGB32 specification. Thus, each pixel is composed by bytes 0x0000FFFF is a red pixel with no transparency, 0x00FF00FF is green, 0xFF0000FF is blue, 0x00FFFFFF is yellow.
 Each pixel contains 3 bytes of colors (excluding the byte for alpha channel), it is possible to save 3 bits of the message for each pixel of the image. Using this model, if an image with NxN pixels, it can contains, at maximum, (N^2 x 3)/8 caracters.
